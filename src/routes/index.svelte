@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+    let query = "";
+
+    function submitsearch() {
+        window.location.replace("search/" + query)
+    }
+</script>
+<div class="flex justify-center self-center items-center hover:shadow">
+    <input class="rounded" bind:value={query}>
+    <button class="hover:shadow" on:click={submitsearch}>Submit</button>
+</div>
