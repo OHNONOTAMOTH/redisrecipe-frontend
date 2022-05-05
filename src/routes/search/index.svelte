@@ -11,8 +11,10 @@
     var h = "http://127.0.0.1:8000/apisearch/".concat(url);
 </script>
 
-<div class="grid justify-center rounded bg-slate-500">
+<div class="grid rounded justify-center hover:shadow">
     {#each qdata as result}
-        <p>{result}</p>
+        <div class="rounded hover:shadow m-100">
+            <p>{result}</p>
+        </div>
     {/each}
 </div>
