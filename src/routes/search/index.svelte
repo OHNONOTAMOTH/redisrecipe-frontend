@@ -48,7 +48,6 @@
     }); //get query
     var h = "http://127.0.0.1:8000/apisearch/".concat(url);
 </script>
-{url}
 
 <div class="grid justify-center rounded bg-slate-500">
     {#each qdata as result}
